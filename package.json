@@ -38,7 +38,6 @@
     "prepare": "husky install",
     "package": "gulp package",
     "publish": "gulp publish",
-    "postinstall": "playwright install chromium",
     "precommit": "npm-run-all --parallel test:lint test:types",
     "updatetypes": "cd src/typings && npx -y @vscode/dts dev && npx -y @vscode/dts master",
     "updatenodeapi": "python src/build/getNodePdl.py && prettier --write src/build/nodeCustom.ts",
